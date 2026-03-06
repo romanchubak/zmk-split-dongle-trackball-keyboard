@@ -1,9 +1,5 @@
 #include "one_key.dtsi"
 
-&trackball_split: trackball_split {
-	device = <&pmw3360>;
-};
-
 &xiao_spi {
 	status = "okay";
 	cs-gpios = <&xiao_d 1 GPIO_ACTIVE_LOW>;
@@ -15,4 +11,8 @@
 		irq-gpios = <&xiao_d 0 GPIO_ACTIVE_LOW>;
 		status = "okay";
 	};
+};
+
+&trackball_split {
+	device = <&pmw3360>;
 };
