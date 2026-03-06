@@ -14,5 +14,5 @@
 			device = <&trackball_split>;
 			status = "disabled";
 		};
-	}
-}
+	};
+};
