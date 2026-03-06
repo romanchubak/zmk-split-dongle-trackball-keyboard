@@ -1,3 +1,5 @@
 include:
   - board: seeeduino_xiao_ble
     shield: one_key
+  - board: seeeduino_xiao_ble
+    shield: trackball

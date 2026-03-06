@@ -1,0 +1,25 @@
+/ {
+	input_split: input_split {
+		compatible = "zmk, input-split";
+		status = "okay";
+	};
+
+	trackball_listener: trackball_listener {
+		compatible = "zmk,input-listener";
+		device = <&pmw3360>;
+		status = "okay";
+	};
+};
+
+&xiao_spi {
+	status = "okay";
+	cs-gpios = <&xiao_d 1 GPIO_ACTIVE_LOW>;
+
+	pmw3360: pmw3360@0 {
+		compatible = "pixart,pmw3360";
+		reg = <0>;
+		spi-max-frequency = <2000000>;
+		irq-gpios = <&xiao_d 0 GPIO_ACTIVE_LOW>;
+		status = "okay";
+	};
+};
