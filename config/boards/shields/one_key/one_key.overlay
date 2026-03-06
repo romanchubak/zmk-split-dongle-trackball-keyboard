@@ -13,6 +13,6 @@
 };
 
 
-trackball_listener: trackball_listener {
+&trackball_listener: trackball_listener {
 	status = "okay";
 };
