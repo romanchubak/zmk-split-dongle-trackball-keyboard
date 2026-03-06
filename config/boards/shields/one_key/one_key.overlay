@@ -10,7 +10,7 @@
 
 	input_split: input_split {
 		compatible = "zmk,input-split";
-		status = "okay";
 		reg = <0>;
+		status = "okay";
 	};
 };
