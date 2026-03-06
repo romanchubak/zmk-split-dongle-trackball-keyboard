@@ -1,15 +1,7 @@
-/ {
-	input_split: input_split {
-		compatible = "zmk,input-split";
-		reg = <0>;
-		status = "okay";
-	};
+#include "one_key.dtsi"
 
-	trackball_listener: trackball_listener {
-		compatible = "zmk,input-listener";
-		device = <&pmw3360>;
-		status = "okay";
-	};
+&trackball_split: trackball_split {
+	device = <&pmw3360>;
 };
 
 &xiao_spi {
