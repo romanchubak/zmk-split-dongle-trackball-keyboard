@@ -1,18 +1,39 @@
 #include "one_key.dtsi"
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix-transform = &default_transform;
+    };
+
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-direct";
+        input-gpios = <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        status = "okay";
+    };
+
+    default_transform: matrix_transform {
+        compatible = "zmk,matrix-transform";
+        rows = <1>;
+        columns = <1>;
+        map = <RC(0,0)>;
+    };
+};
 
 &xiao_spi {
-	status = "okay";
-	cs-gpios = <&xiao_d 1 GPIO_ACTIVE_LOW>;
+    status = "okay";
+    cs-gpios = <&xiao_d 1 GPIO_ACTIVE_LOW>;
 
-	pmw3360: pmw3360@0 {
-		compatible = "pixart,pmw3360";
-		reg = <0>;
-		spi-max-frequency = <2000000>;
-		irq-gpios = <&xiao_d 0 GPIO_ACTIVE_LOW>;
-		status = "okay";
-	};
+    pmw3360: pmw3360@0 {
+        compatible = "pixart,pmw3360";
+        reg = <0>;
+        spi-max-frequency = <2000000>;
+        irq-gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>;
+        status = "okay";
+    };
 };
 
 &trackball_split {
-	device = <&pmw3360>;
+    device = <&pmw3360>;
 };
