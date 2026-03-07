@@ -11,7 +11,7 @@
         default_layer {
 			label = "default";
             bindings = <
-                &mkp LCLK
+                &kp SPACE
             >;
         };
     };
