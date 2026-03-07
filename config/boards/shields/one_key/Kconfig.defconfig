@@ -1,7 +1,7 @@
 if SHIELD_ONE_KEY 
 
 config ZMK_KEYBOARD_NAME
-    default "one_key_track_ball"
+    default "keytrackball"
     
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
