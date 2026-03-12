@@ -1,5 +1,0 @@
-config SHIELD_ONE_KEY
-	def_bool $(shields_list_contains,one_key)
-
-config SHIELD_TRACKBALL
-	def_bool $(shields_list_contains,trackball)

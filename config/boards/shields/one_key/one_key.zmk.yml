@@ -1,9 +1,0 @@
-file_format: "1"
-id: one_key
-name: one_key
-type: shield
-requires: [seeeduino_xiao_ble]
-features:
-  - keys
-siblings:
-  - one_key

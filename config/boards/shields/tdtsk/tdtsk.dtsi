@@ -8,11 +8,11 @@
 			reg = <0>;
 			status = "okay";
 		};
+	};
 
-		trackball_listener: trackball_listener {
-			compatible = "zmk,input-listener";
-			device = <&trackball_split>;
-			status = "disabled";
-		};
+	trackball_listener: trackball_listener {
+		compatible = "zmk,input-listener";
+		device = <&trackball_split>;
+		status = "disabled";
 	};
 };

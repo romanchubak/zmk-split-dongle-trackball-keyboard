@@ -1,0 +1,5 @@
+config SHIELD_TDTSK_CENTRAL
+	def_bool $(shields_list_contains,tdtsk_central)
+
+config SHIELD_TDTSK_TRACKBALL
+	def_bool $(shields_list_contains,tdtsk_trackball)
