@@ -3,3 +3,5 @@ include:
     shield: one_key
   - board: seeeduino_xiao_ble
     shield: trackball
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
