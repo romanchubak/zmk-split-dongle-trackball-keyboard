@@ -1,7 +1,7 @@
 include:
   - board: seeeduino_xiao_ble
-    shield: one_key
+    shield: tdtsk_central
   - board: seeeduino_xiao_ble
-    shield: trackball
+    shield: tdtsk_trackball
   - board: seeeduino_xiao_ble
     shield: settings_reset
