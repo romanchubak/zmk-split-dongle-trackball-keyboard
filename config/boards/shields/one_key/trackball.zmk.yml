@@ -1,0 +1,9 @@
+file_format: "1"
+id: trackball
+name: trackball
+type: shield
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - trackball
