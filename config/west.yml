@@ -10,7 +10,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: zmk-pmw3360-driver 
+    - name: zmk-pmw3360-driver
       remote: KOHSUK
       revision: pmw3360
   self:
