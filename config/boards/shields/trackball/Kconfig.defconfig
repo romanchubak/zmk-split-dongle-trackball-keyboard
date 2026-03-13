@@ -1,4 +1,4 @@
-if SHIELD_TDTSK_CENTRAL
+if SHIELD_TRACKBALL
 
 	config ZMK_KEYBOARD_NAME
 		default "trackball"
