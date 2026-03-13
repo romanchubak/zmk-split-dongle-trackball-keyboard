@@ -6,9 +6,6 @@ if SHIELD_TDTSK_CENTRAL
 	config ZMK_SPLIT_ROLE_CENTRAL
 		default y
 
-	config ZMK_USB
-		default y
-
 endif
 
 if SHIELD_TDTSK_CENTRAL || SHIELD_TDTSK_TRACKBALL 
