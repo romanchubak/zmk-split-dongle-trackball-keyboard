@@ -32,7 +32,6 @@
         compatible = "pixart,pmw3360";
         reg = <0>;
         spi-max-frequency = <500000>;
-        irq-gpios = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
 
