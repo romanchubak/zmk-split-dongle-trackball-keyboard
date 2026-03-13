@@ -1,6 +1,10 @@
 #include "tdtsk.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
+&trackball_listener {
+	status = "okay";
+};
+
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -21,6 +25,3 @@
     };
 };
 
-&trackball_listener {
-    status = "okay";
-};

@@ -2,6 +2,14 @@
 #include "pmw3360.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
+&trackball_split {
+	device = <&trackball>;
+};
+
+&spi0 {
+	status = "okay";
+};
+
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -23,11 +31,4 @@
     };
 };
 
-&trackball_split {
-    device = <&trackball>;
-};
-
-&spi0 {
-    status = "okay";
-};
 
