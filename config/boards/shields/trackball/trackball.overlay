@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <zmk/event-manager.h>
 
 &pinctrl {
     spi0_default: spi0_default {
