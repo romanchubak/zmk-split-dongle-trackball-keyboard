@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <zmk/event-manager.h>
+#include <input/processors.dtsi>
 
 &pinctrl {
     spi0_default: spi0_default {
@@ -83,14 +83,6 @@
 		compatible = "zmk,input-listener";
 		device = <&trackball>;
 		status = "okay";
-		input-processors = <&y_gain>;
+		input-processors = <&zip_y_scaler 2 1>;
 	};
-
-	y_gain: y_gain {
-		compatible = "zmk,input-processor-math";
-		#binding-cells = <0>;
-
-		bindings = <2>;
-	};
-
 };
